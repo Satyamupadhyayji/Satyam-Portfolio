@@ -1,0 +1,462 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+/* General styles */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: blue;
+    padding: 0 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(51, 3, 3);
+    font-weight: 300;
+    font-size: 1rem;
+}
+.home-sci a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid red;
+    border-radius: 50%;
+    font-size: 20px;
+    color: aqua;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+}
+.home-sci a:hover{
+    background: #0ef;
+    color: green;
+    box-sizing: 0 0 20px #0ef;
+}
+
+nav ul li a:hover {
+    color: aquamarine;
+    font-size: 1.04rem;
+}
+
+.left {
+    font-size: 1.7rem;
+}
+
+.left:hover {
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+    font-size: 1.8rem;
+}
+
+/* First Section */
+.firstSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px 20px;
+}
+
+.firstSection > div {
+    flex: 1 1 300px;
+    margin: 20px;
+    text-align: center;
+}
+
+.leftSection {
+    font-size: 2rem;
+}
+
+.leftSection .btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #333;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.leftSection .btn:hover {
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+}
+
+.rightSection img {
+    height: auto;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 50%;
+}
+
+/* Services Section */
+#services {
+    text-align: center;
+    color: azure;
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+
+.sub-title {
+    text-align: center;
+    font-size: 2.5rem;
+    padding-bottom: 70px;
+}
+
+.sub-title span {
+    color: #0ef;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    margin: 0 20px;
+}
+
+.services-list div {
+    padding: 20px;
+    font-size: 0.9rem;
+    border-radius: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 1px 1px 20px rgb(41, 41, 115), 1px 1px 40px rgb(122, 122, 213);
+}
+
+.services-list div:hover {
+    transform: translateY(-10px);
+}
+.read{
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: green;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+
+    animation: slideTop is ease forwords;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #0ef,
+    0 0 25px #0ef;
+}
+.read:hover{
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan ,0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan;
+}
+
+/* Contact Section */
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.contact-text {
+    flex: 1 1 400px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contact-text h2{
+    font-size: 90px;
+    line-height: 1;
+    text-align: center;
+}
+.contact-text h2 span{
+    color: #0ef;
+}
+.contact-text h2{
+    margin: 15px 0;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+}
+.contact-text p{
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+}
+.contact-list{
+    margin-bottom: 3rem;
+}
+.contact-list li{
+    margin-bottom: 10px;
+    display: block;
+    letter-spacing: 2px;
+
+}
+.contact-list i{
+    display: inline-block;
+    color: #0ef;
+    font-size: 25px;
+    font-weight: 600;
+    transition: all .40s ease;
+}
+.contact-list li a:hover{
+    transform: scale(1.01) translateY(-5px);
+    color: #0ef;
+}
+.contact-icons i{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+        margin: 30px 15px 30px 0;
+    }
+.contact-icons i:hover{
+            background: #0ef;
+            color: #000;
+            box-shadow: 0 0 20px #0ef;
+        }
+
+.contact-forms {
+    flex: 1 1 400px;
+}
+
+.contact-forms form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-forms form input,
+.contact-forms form textarea {
+    width: 100%;
+    padding: 12px;
+    background: wheat;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+}
+
+.contact-forms form .send {
+    padding: 10px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 1rem;
+    color: #000;
+    text-align: center;
+    font-weight: 600;
+    transition: box-shadow 0.3s;
+}
+
+.contact-forms form .send:hover {
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(94, 65, 122);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .firstSection {
+        flex-direction: column;
+    }
+
+    .services-list {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+
+    .contact-text {
+        margin-bottom: 2rem;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
+
+
+/* Education Section */
+#education {
+    text-align: center;
+    margin: 50px 20px;
+}
+
+.education-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.education-item {
+    flex: 1 1 300px;
+    background-color: #1a1a40;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: left;
+    margin: 10px;
+}
+
+.education-item h3 {
+    margin-bottom: 10px;
+    color: #0ef;
+}
+
+/* Skills Section */
+#skills {
+    text-align: center;
+    margin: 50px 20px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skill {
+    background-color: #0ef;
+    color: #000;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+}
+
+/* Media Queries for Education and Skills */
+@media (max-width: 768px) {
+    .education-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .education-item {
+        flex: 1 1 auto;
+        width: 90%;
+    }
+
+    .skills-list {
+        flex-direction: column;
+    }
+
+    .skill {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+/* Footer styling */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+.footer-sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    margin: 1rem;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 0.5rem 0;
+    cursor: pointer;
+}
+
+.footer-section ul li:hover {
+    text-decoration: underline;
+}
+
+.footer-rights {
+    margin-top: 1rem;
+    border-top: 1px solid #ccc;
+    padding-top: 1rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .footer-sections {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin: 1rem 0;
+    }
+}
+
+
